@@ -5,182 +5,214 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Currículo - Leonardo Baião</title>
 <style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #e6f0fa;
-        margin: 0;
-        padding: 0;
-        color: #333;
-    }
-
-    .container {
-        max-width: 900px;
-        margin: 30px auto;
-        background-color: #fff;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-
-    h1 {
-        text-align: center;
-        color: #0d47a1;
-        margin-bottom: 5px;
-    }
-
-    .contact {
-        text-align: center;
-        font-size: 14px;
-        color: #555;
-        margin-bottom: 30px;
-    }
-
-    .contact a {
-        color: #1565c0;
-        text-decoration: none;
-        margin: 0 5px;
-    }
-
-    .contact a:hover {
-        text-decoration: underline;
-    }
-
-    .contact svg {
-        vertical-align: middle;
-        width: 18px;
-        height: 18px;
-        margin-right: 3px;
-        fill: #0d47a1;
-    }
-
-    .menu {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .menu button {
-        margin: 5px;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 8px;
-        background-color: #0d47a1;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .menu button:hover {
-        background-color: #1565c0;
-    }
-
-    .accordion {
-        background-color: #f5f9ff;
-        color: #0d47a1;
-        cursor: pointer;
-        padding: 15px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 16px;
-        transition: background-color 0.3s;
-        border-left: 5px solid #0d47a1;
-        margin-bottom: 5px;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .accordion.active {
-        background-color: #dbe9ff;
-    }
-
-    .panel {
-        padding: 0 15px 15px 15px;
-        display: none;
-        background-color: #f5f9ff;
-        border-radius: 0 0 8px 8px;
-        overflow: hidden;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    li {
-        margin-bottom: 6px;
-    }
-
-    a {
-        color: #1565c0;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    .accordion svg {
-        width: 20px;
-        height: 20px;
-        transition: transform 0.3s;
-    }
-
-    .accordion.active svg {
-        transform: rotate(90deg);
-    }
-
-    .section-icon {
-        width: 18px;
-        height: 18px;
-        margin-right: 8px;
-        vertical-align: middle;
-        fill: #0d47a1;
-    }
-
-    @media print {
-        body { background-color: #fff; }
-        .container { box-shadow: none; border: none; }
-        .menu { display: none; }
-        .panel { display: block !important; }
-    }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f0fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+h1 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 5px;
+}
+.contact {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+}
+.contact a {
+    color: #1565c0;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.contact a:hover { text-decoration: underline; }
+.contact svg {
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    fill: #0d47a1;
+}
+.menu { text-align: center; margin-bottom: 20px; }
+.menu button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0d47a1;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.menu button:hover { background-color: #1565c0; }
+.accordion {
+    background-color: #f5f9ff;
+    color: #0d47a1;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-left: 5px solid #0d47a1;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordion.active { background-color: #dbe9ff; }
+.panel {
+    padding: 0 15px 15px 15px;
+    display: none;
+    background-color: #f5f9ff;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+ul { padding-left: 20px; }
+li { margin-bottom: 6px; }
+a { color: #1565c0; }
+a:hover { text-decoration: underline; }
+.accordion svg { width: 20px; height: 20px; transition: transform 0.3s; }
+.accordion.active svg { transform: rotate(90deg); }
+.section-icon { width: 18px; height: 18px; margin-right: 8px; vertical-align: middle; fill: #0d47a1; }
+@media print {
+    body { background-color: #fff; }
+    .container { box-shadow: none; border: none; }
+    .menu { display: none; }
+    .panel { display: block !important; }
+}
 </style>
 </head>
 <body>
 <div class="container">
-    <h1>Leonardo Baião de Santana</h1>
-    <p class="contact">
-        São Paulo/SP | +55 (11) 97613-1029 | 
-        <a href="mailto:leobaiao966@gmail.com">
-            <svg viewBox="0 0 24 24"><path d="M12 13l-8-5v10h16v-10z"/><path d="M12 11l8-5H4z"/></svg>
-            leobaiao966@gmail.com
-        </a>
-        <a href="https://www.linkedin.com/in/leonardo-baiao" target="_blank">
-            <svg viewBox="0 0 24 24"><path d="M4 4h4v16H4zM6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm6 8h4v2.2c.5-.9 1.7-1.2 2.5-1.2 2.7 0 3.2 1.8 3.2 4.2V20h-4v-6.1c0-1.5-.5-2.5-1.8-2.5-1 0-1.5.7-1.8 1.4-.1.2-.1.5-.1.8V20h-4z"/></svg>
-            LinkedIn
-        </a>
-        <a href="https://github.com/Leobaiao" target="_blank">
-            <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.84 10.91.57.11.77-.25.77-.56 0-.28-.01-1.03-.01-2.03-3.19.69-3.87-1.54-3.87-1.54-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.89-.39s1.97.13 2.89.39c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.85 1.18 3.11 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.08.78 2.18 0 1.57-.01 2.83-.01 3.21 0 .31.2.68.78.56C20.71 21.39 24 17.08 24 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
-            GitHub
-        </a>
-    </p>
+<h1>Leonardo Baião de Santana</h1>
+<p class="contact">
+São Paulo/SP | +55 (11) 97613-1029 | 
+<a href="mailto:leobaiao966@gmail.com">
+<svg viewBox="0 0 24 24"><path d="M12 13l-8-5v10h16v-10z"/><path d="M12 11l8-5H4z"/></svg>
+leobaiao966@gmail.com
+</a>
+<a href="https://www.linkedin.com/in/leonardo-baiao" target="_blank">
+<svg viewBox="0 0 24 24"><path d="M4 4h4v16H4zM6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm6 8h4v2.2c.5-.9 1.7-1.2 2.5-1.2 2.7 0 3.2 1.8 3.2 4.2V20h-4v-6.1c0-1.5-.5-2.5-1.8-2.5-1 0-1.5.7-1.8 1.4-.1.2-.1.5-.1.8V20h-4z"/></svg>
+LinkedIn
+</a>
+<a href="https://github.com/Leobaiao" target="_blank">
+<svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.84 10.91.57.11.77-.25.77-.56 0-.28-.01-1.03-.01-2.03-3.19.69-3.87-1.54-3.87-1.54-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.89-.39s1.97.13 2.89.39c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.85 1.18 3.11 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.08.78 2.18 0 1.57-.01 2.83-.01 3.21 0 .31.2.68.78.56C20.71 21.39 24 17.08 24 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+GitHub
+</a>
+</p>
 
-    <div class="menu">
-        <button data-target="objetivo">Objetivo</button>
-        <button data-target="resumo">Resumo</button>
-        <button data-target="formacao">Formação</button>
-        <button data-target="experiencia">Experiência</button>
-        <button data-target="projetos">Projetos</button>
-        <button data-target="habilidades">Habilidades</button>
-        <button data-target="idiomas">Idiomas</button>
-        <button data-target="info">Informações</button>
-    </div>
+<div class="menu">
+<button data-target="objetivo">Objetivo</button>
+<button data-target="resumo">Resumo</button>
+<button data-target="formacao">Formação</button>
+<button data-target="experiencia">Experiência</button>
+<button data-target="projetos">Projetos</button>
+<button data-target="habilidades">Habilidades</button>
+<button data-target="idiomas">Idiomas</button>
+<button data-target="info">Informações</button>
+</div>
 
-    <!-- Objetivo -->
-    <button class="accordion" id="objetivo">
-        <span><svg class="section-icon" viewBox="0 0 24 24"><path d="M12 2L2 12h10v10h4V12h10z"/></svg>Objetivo</span>
-        <svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/></svg>
-    </button>
-    <div class="panel">
-        <p>Atuar como trainee em Programação ou Ciência de Dados, aplicando conhecimentos em C#, SQL, Python, Node.js e automação, contribuindo com soluções práticas, aprendizado rápido e impacto mensurável em equipes de
+<!-- Objetivo -->
+<button class="accordion" id="objetivo">
+<span><svg class="section-icon" viewBox="0 0 24 24"><path d="M12 2L2 12h10v10h4V12h10z"/></svg>Objetivo</span>
+<svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/></svg>
+</button>
+<div class="panel">
+<p>Atuar como trainee em Programação ou Ciência de Dados, aplicando conhecimentos em C#, SQL, Python, Node.js e automação, contribuindo com soluções práticas, aprendizado rápido e impacto mensurável em equipes de tecnologia.</p>
+</div>
+
+<!-- Resumo -->
+<button class="accordion" id="resumo">
+<span><svg class="section-icon" viewBox="0 0 24 24"><path d="M12 2L2 12h20L12 2z"/></svg>Resumo Profissional</span>
+<svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/></svg>
+</button>
+<div class="panel">
+<ul>
+<li>Estudante de Ciência de Dados com experiência prática em C#, SQL e automação de processos.</li>
+<li>Desenvolveu soluções que aumentaram a eficiência de operações em até 80%.</li>
+<li>Proativo, colaborativo, criativo e aprendizado rápido.</li>
+<li>Focado em impacto mensurável e soluções escaláveis.</li>
+</ul>
+</div>
+
+<!-- Formação -->
+<button class="accordion" id="formacao">
+<span><svg class="section-icon" viewBox="0 0 24 24"><path d="M12 2L2 12h20L12 2z"/></svg>Formação Acadêmica</span>
+<svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/></svg>
+</button>
+<div class="panel">
+<p><strong>Bacharelado em Ciência de Dados</strong> – Univesp, São Paulo/SP (2024 – atual)</p>
+<p>Disciplinas: Estrutura de Dados, Algoritmos e Programação, Fundamentos de Programação e Análise de Dados.</p>
+<p><strong>Cursos Complementares:</strong></p>
+<ul>
+<li>Desenvolvimento Orientado a Objetos com Python – Fundação Bradesco</li>
+<li>Introdução à Programação Orientada a Objetos (POO) – Fundação Bradesco</li>
+<li>Projetos e Processos de TI – Anhembi Morumbi</li>
+<li>Governança e Serviços de TI – Anhembi Morumbi</li>
+<li>Coding Foundations, JavaScript, SQL e C# – Sololearn</li>
+</ul>
+</div>
+
+<!-- Experiência -->
+<button class="accordion" id="experiencia">
+<span><svg class="section-icon" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>Experiência</span>
+<svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/></svg>
+</button>
+<div class="panel">
+<ul>
+<li><strong>Estagiário de TI – Altweb360, SP (Out/2024 – atual)</strong>
+<ul>
+<li>Automação de desbloqueio de celulares simultâneos (até 5), aumentando produtividade em ~80%.</li>
+<li>Operação e aprimoramento de sistema de envio de mensagens (~3k mensagens/h).</li>
+<li>Integração de IA online/offline para otimização de processos (+20% desempenho).</li>
+<li>Suporte técnico, manutenção e otimização de sistemas.</li>
+</ul>
+</li>
+<li><strong>Entregador iFood (Autônomo) – SP (Mar/2025 – atual)</strong>
+<ul>
+<li>Gestão de tempo eficiente conciliando entregas, estágio e estudos.</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<!-- Projetos -->
+<button class="accordion" id="projetos">
+<span><svg class="section-icon" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>Projetos</span>
+<svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/></svg>
+</button>
+<div class="panel">
+<ul>
+<li>Automação e Maturação de Números (offline): Hardware + app com função ATP e IA offline, +20% eficiência.</li>
+<li>Envio em Massa (Node.js/JS): Z-API + GTI-API, ~3k mensagens/h, integração de IA online.</li>
+<li>Euforia Confeitaria (Front-end): Landing page visual com paleta rosa/laranja/amarelo.</li>
+</ul>
+<p><strong>Links:</strong> <a href="https://github.com/Leobaiao/whatsapp-automacao" target="_blank">WhatsApp Automação</a> | <a href="https://github.com/Leobaiao/euforia" target="_blank">Euforia Confeitaria</a></p>
+</div>
+
+<!-- Habilidades -->
+<button class="accordion" id="habilidades">
+<span><svg class="section-icon" viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/></svg>Habilidades Técnicas</span>
+<svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7z"/></svg>
+</button>
+<div class="panel">
+<ul>
+<li><strong>Programação:</strong> C# (Avançado), Python (Básico), JavaScript (Intermediário), Node.js (Básico), HTML/CSS, React (Básico)</li>
+<li><strong>Banco de Dados:</strong> SQL Server (consultas, monitoramento, otimização)</li>
+<li><strong>Automação & IA:</strong> ADB, Appium, IA online/offline</
